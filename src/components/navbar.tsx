@@ -4,8 +4,8 @@ export function Navbar() {
   return (
     <center className="ht6-navbar w-100">
       <Image
-        width={192}
-        height={52}
+        width={159}
+        height={44}
         src={"/logo_horizontal.png"}
         alt="André Felipe"
       />

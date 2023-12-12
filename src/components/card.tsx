@@ -22,8 +22,21 @@ export function Card({
           className="photo-card"
         />
       </center>
+      <div>
+        <div style={{ position: 'absolute', transform: `Translate(${stars == 5 ? '100px' : '108px'},100px)` }}>
+          <Image src={"/star.png"} width={15} height={15} alt="Star" />
+          <Image src={"/star.png"} width={15} height={15} alt="Star" className="ms-1" />
+          <Image src={"/star.png"} width={15} height={15} alt="Star" className="ms-1" />
+          <Image src={"/star.png"} width={15} height={15} alt="Star" className="ms-1" />
 
-      <div className="px-5" style={{ transform: "TranslateY(-28px)" }}>
+          {stars == 5 ? (
+            <Image src={"/star.png"} width={15} height={15} alt="Star" className="ms-1" />
+          ) : (
+            <div></div>
+          )}
+        </div>
+      </div>
+      <div className="px-4" style={{ transform: "TranslateY(-28px)" }}>
         <h3>{name}</h3>
         <p
           className="text-white text-center "
@@ -34,19 +47,10 @@ export function Card({
         <p className="text-white text-center" style={{ fontSize: 12 }}>
           {testimonial}
         </p>
-        <center>
-          <Image src={"/star.png"} width={15} height={15} alt="Star" className="margin-1" />
-          <Image src={"/star.png"} width={15} height={15} alt="Star" />
-          <Image src={"/star.png"} width={15} height={15} alt="Star" />
-          <Image src={"/star.png"} width={15} height={15} alt="Star" />
 
-          {stars == 5 ? (
-            <Image src={"/star.png"} width={15} height={15} alt="Star" />
-          ) : (
-            <div></div>
-          )}
-        </center>
       </div>
+
     </div>
+
   );
 }

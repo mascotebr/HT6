@@ -6,6 +6,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Countdown } from "@/components/countdown";
 import { About } from "@/components/about";
 import { Testimonials } from "@/components/testimonials";
+import { Vitafor } from "@/components/vitafor";
+import { CTA } from "@/components/cta";
+import { Footer } from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,8 +30,13 @@ export default function Home() {
           <About />
           <hr />
           <Testimonials />
+          <Vitafor />
+          <CTA />
         </div>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

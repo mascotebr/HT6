@@ -13,6 +13,11 @@
   font-family: circle;
   src: url("/fonts/circle-rounded.otf");
 }
+
+* {
+  max-width: vw100 !important;
+}
+
 html,
 body {
   width: vw100;
@@ -24,9 +29,10 @@ body {
 .ht6-navbar {
   width: 100%;
   background-color: black;
-  padding-top: 8px;
+  padding: 16px;
   z-index: 100;
   position: absolute;
+
 }
 
 .banner {
@@ -69,7 +75,12 @@ a:active {
   background-color: var(--primary);
 }
 
-video {
+.icon {
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+
+iframe {
   margin-top: 32px;
   background-color: black;
   background: linear-gradient(to bottom, #000000, #202020);
@@ -109,7 +120,7 @@ hr {
 }
 
 .ht6-card {
-  height: 211px;
+  height: 230px;
   width: 287px;
   background-color: #161616;
   border-radius: 12px;
@@ -127,4 +138,10 @@ h3 {
   text-align: center;
   padding: 0;
   margin: 0;
+}
+
+.free {
+  background: linear-gradient(to bottom, #3D7862, #18DE97);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
