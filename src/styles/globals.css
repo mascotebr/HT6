@@ -8,6 +8,11 @@
   font-family: glot;
   src: url("/fonts/glot-bold-italic.otf");
 }
+
+@font-face {
+  font-family: circle;
+  src: url("/fonts/circle-rounded.otf");
+}
 html,
 body {
   width: vw100;
@@ -83,6 +88,15 @@ video {
   margin-top: 42px;
 }
 
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 16px solid #000 !important;
+  margin: 1em 0 !important;
+  padding: 0;
+}
+
 .countdown {
   background-color: var(--secondary);
   padding: 0 48px 12px 48px;
@@ -92,4 +106,25 @@ video {
   text-align: center;
   margin-left: 15%;
   margin-top: 4px;
+}
+
+.ht6-card {
+  height: 211px;
+  width: 287px;
+  background-color: #161616;
+  border-radius: 12px;
+  padding-top: 0;
+}
+
+.photo-card {
+  transform: translateY(-42.5px);
+}
+
+h3 {
+  font-family: circle;
+  color: white !important;
+  font-size: 16px !important;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }

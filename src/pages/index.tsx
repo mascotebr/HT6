@@ -4,6 +4,8 @@ import { Navbar } from "@/components/navbar";
 import { Banner } from "@/components/banner";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Countdown } from "@/components/countdown";
+import { About } from "@/components/about";
+import { Testimonials } from "@/components/testimonials";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +24,9 @@ export default function Home() {
         <div className="linear-background">
           <div style={{ height: 275 }} />
           <Countdown />
+          <About />
+          <hr />
+          <Testimonials />
         </div>
       </main>
     </>
