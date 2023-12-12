@@ -4,15 +4,16 @@ export function Footer() {
   return (
     <div className="conatiner p-4" style={{ backgroundColor: '#000' }}>
       <div className="row d-flex justify-content-center">
-        <div className="col-3">
+        <div className="col-md-3">
           <p className="title text-white m-0 p-0" style={{ fontSize: 16 }}>Minhas redes sociais</p>
           <center>
-            <Link className="icon" href={''}>
+            <Link className="icon" href={'https://www.instagram.com/andrefepg'} target="_blank">
               <Image src={'/logos/instagram.png'} height={21} width={21} alt="Instagram" />
             </Link>
           </center>
         </div>
-        <div className="col-3">
+        <div className="mt-2" />
+        <div className="col-md-3">
           <p className="title text-white m-0 p-0" style={{ fontSize: 16 }}>Parceiros</p>
           <div className="d-flex justify-content-center">
 

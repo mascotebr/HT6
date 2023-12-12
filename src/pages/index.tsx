@@ -9,6 +9,7 @@ import { Testimonials } from "@/components/testimonials";
 import { Vitafor } from "@/components/vitafor";
 import { CTA } from "@/components/cta";
 import { Footer } from "@/components/footer";
+import useResponsive from "@/utils/responsive";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +26,7 @@ export default function Home() {
         <Navbar />
         <Banner />
         <div className="linear-background">
-          <div style={{ height: 275 }} />
+         {useResponsive() == 'desktop' ?   <div style={{ height: 275 }} /> : <div style={{ height: 75 }} />}
           <Countdown />
           <About />
           <hr />

@@ -1,16 +1,17 @@
+import useResponsive from "@/utils/responsive";
 import { Card } from "./card";
 
 export function Testimonials() {
   return (
     <div>
-      <h2 className="title" style={{ fontSize: 48 }}>
+      <h2 className="title" style={{ fontSize: useResponsive() == 'desktop' ? 48 : 24 }}>
         Comentários de alunas
       </h2>
       <div style={{ height: 64 }} />
       <div className="container">
 
         <div className="row">
-          <div className="col-4 d-flex justify-content-center">
+          <div className="col-md-4 d-flex justify-content-center">
             <Card
               name="Camila Jordana"
               image="/photos/camila.png"
@@ -18,7 +19,8 @@ export function Testimonials() {
               stars={5}
             />
           </div>
-          <div className="col-4 d-flex justify-content-center">
+          <div style={{height: 64}}/>
+          <div className="col-md-4 d-flex justify-content-center">
             <Card
               name="Karen Martins"
               image="/photos/karen.png"
@@ -26,7 +28,8 @@ export function Testimonials() {
               stars={4}
             />
           </div>
-          <div className="col-4 d-flex justify-content-center">
+           <div style={{height: 64}}/>
+          <div className="col-md-4 d-flex justify-content-center">
             <Card
               name="Dayanna Kaltner"
               image="/photos/dayana.png"
@@ -36,7 +39,7 @@ export function Testimonials() {
           </div>
         </div>
       </div>
-      <div style={{ height: 64 }} />
+      <div style={{ height:   useResponsive() == 'desktop' ? 64 : 24 }} />
     </div>
   );
 }
