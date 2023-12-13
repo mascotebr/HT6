@@ -18,7 +18,8 @@ export function Vitafor() {
       <div style={{ height: 32 }} />
       <div
         className="d-flex justify-content-center w-100">
-        <Image src={'/vitafor-photo.png'} width={400} height={483} alt="kits vitafor" />
+        <Image src={'/vitafor-photo.png'} width={ useResponsive() == 'desktop' ? 400 : 350} height={useResponsive() == 'desktop' ? 483 : 285 } alt="kits vitafor" style={{objectFit: 'cover', borderRadius: 12}}/>
+
         <Image
           src={'/logos/vitafor.png'}
           width={85}

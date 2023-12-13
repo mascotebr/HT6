@@ -11,7 +11,7 @@ export function Testimonials() {
       <div className="container">
 
         <div className="row">
-          <div className="col-md-4 d-flex justify-content-center">
+          <div className="col-md-4 d-flex justify-content-center" style={{marginBottom: 64}}>
             <Card
               name="Camila Jordana"
               image="/photos/camila.png"
@@ -19,8 +19,8 @@ export function Testimonials() {
               stars={5}
             />
           </div>
-          <div style={{height: 64}}/>
-          <div className="col-md-4 d-flex justify-content-center">
+
+          <div className="col-md-4 d-flex justify-content-center" style={{marginBottom: 64}}>
             <Card
               name="Karen Martins"
               image="/photos/karen.png"
@@ -28,7 +28,7 @@ export function Testimonials() {
               stars={4}
             />
           </div>
-           <div style={{height: 64}}/>
+          
           <div className="col-md-4 d-flex justify-content-center">
             <Card
               name="Dayanna Kaltner"
