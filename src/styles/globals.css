@@ -1,7 +1,6 @@
 :root {
   --primary: #de5f18;
-  --secondary: #18de97;
-  --secondary-dark: #114b36;
+  --primary-dark: #590e08;
 }
 
 @font-face {
@@ -57,22 +56,22 @@ body {
 }
 
 a {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   font-family: glot;
   font-size: 24px;
   text-decoration: none !important;
-  color: white !important;
+  color: black !important;
   border-radius: 28px;
   padding: 0 48px 12px 48px;
   transition: 0.1s;
 }
 
 a:hover {
-  background-color: var(--secondary-dark);
+  background-color: #E18534;
 }
 
 a:active {
-  background-color: var(--primary);
+  background-color: #E18534;
 }
 
 .icon {
@@ -93,7 +92,7 @@ iframe {
 }
 
 .ht6-hr {
-  background-color: var(--secondary-dark);
+  background-color: var(--primary-dark);
   height: 42px;
   width: 100%;
   margin-top: 42px;
@@ -109,7 +108,7 @@ hr {
 }
 
 .countdown {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   padding: 0 48px 12px 48px;
   width: 70%;
   border-radius: 12px;
@@ -159,11 +158,11 @@ h3 {
   }
 
   a {
-    background-color: var(--secondary);
+    background-color: var(--primary);
     font-family: glot;
     font-size: 20px;
     text-decoration: none !important;
-    color: white !important;
+    color: black !important;
     border-radius: 28px;
     padding: 12px 48px 12px 48px;
     transition: 0.1s;
@@ -171,7 +170,7 @@ h3 {
   }
 
   .countdown {
-    background-color: var(--secondary);
+    background-color: var(--primary);
     padding: 8px 24px 12px 24px;
     width: 90%;
     border-radius: 12px;
@@ -182,7 +181,7 @@ h3 {
   }
 
   .ht6-hr {
-    background-color: var(--secondary-dark);
+    background-color: var(--primary-dark);
     height: 18px;
     width: 100%;
     margin-top: 32px;
