@@ -1,7 +1,7 @@
 import { useCountdown } from "@/utils/useCountdown";
 
 export function Countdown() {
-  const [days, hours, minutes, seconds] = useCountdown(new Date(2024, 1, 10));
+  const [days, hours, minutes, seconds] = useCountdown(new Date(2024, 0, 10));
   return (
     <div>
       <h2 className="title">Vendas se encerram em:</h2>
