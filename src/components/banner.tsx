@@ -77,7 +77,7 @@ export function Banner() {
       </div>
 
       <center>
-        <p className="text-white p-0 m-2">Eae começa quanto?</p>
+        <p className="text-white p-0 m-2">Venha fazer parte</p>
         <Link href={"https://pay.kiwify.com.br/BFKJu73"}>Garanta sua vaga agora!</Link>
       </center>
       {useResponsive() == 'desktop' ? <>
