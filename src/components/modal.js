@@ -1,21 +1,22 @@
 import useResponsive from "@/utils/responsive";
 import Image from "next/image";
 import Router from "next/router";
-import { FormEvent, useState } from "react";
+import { ChangeEvent, FormEvent, useState } from "react";
 import { Alert, Form, Modal, Spinner } from "react-bootstrap";
 
-export function ModalForms(props: any) {
+
+
+export function ModalForms(props) {
     const [isLoading, setIsLoading] = useState(false);
     const [isError, setIsError] = useState(false);
 
-    const submit = async (event: FormEvent) => {
+    const submit = async (event) => {
         event.preventDefault();
-
         const form = {
-            name: event.target['name'].value,
-            email: event.target['email'].value,
-            whatsapp: event.target['whatsapp'].value,
-        };
+            name: event.target.name.value,
+            email: event.target.email.value,
+            whatsapp: event.target.whatsapp.value,
+        }
         const postData = {
             method: "POST",
             headers: {
@@ -24,7 +25,7 @@ export function ModalForms(props: any) {
             body: JSON.stringify(form),
         };
         setIsLoading(true);
-        const response: Response = await fetch("/api/email/validation", postData);
+        const response = await fetch("/api/email/validation", postData);
         if (response.status == 200) {
             Router.push("https://pay.kiwify.com.br/BFKJu73");
         }
