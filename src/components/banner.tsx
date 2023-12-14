@@ -1,7 +1,8 @@
 import useResponsive from "@/utils/responsive";
 import Image from "next/image";
 import Link from "next/link";
-export function Banner() {
+import { Button } from "react-bootstrap";
+export function Banner({ open }: any) {
 
   const video = () => {
     return <center
@@ -78,7 +79,7 @@ export function Banner() {
 
       <center>
         <p className="text-white p-0 m-2">Venha fazer parte</p>
-        <Link href={"https://pay.kiwify.com.br/BFKJu73"}>Garanta sua vaga agora!</Link>
+        <div className="button-ht6" onClick={() => open(true)}>Garanta sua vaga agora!</div>
       </center>
       {useResponsive() == 'desktop' ? <>
         {video()}

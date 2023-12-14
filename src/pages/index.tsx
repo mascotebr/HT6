@@ -10,10 +10,14 @@ import { Vitafor } from "@/components/vitafor";
 import { CTA } from "@/components/cta";
 import { Footer } from "@/components/footer";
 import useResponsive from "@/utils/responsive";
+import { ModalForms } from "@/components/modal";
+import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+
+  const [modalShow, setModalShow] = useState(false);
   return (
     <>
       <Head>
@@ -24,7 +28,7 @@ export default function Home() {
       </Head>
       <main className={`${inter.className}`}>
         <Navbar />
-        <Banner />
+        <Banner open={setModalShow}/>
         <div className="linear-background">
          {useResponsive() == 'desktop' ?   <div style={{ height: 275 }} /> : <div style={{ height: 75 }} />}
           <Countdown />
@@ -32,8 +36,9 @@ export default function Home() {
           <hr />
           <Testimonials />
           <Vitafor />
-          <CTA />
+          <CTA open={setModalShow} />
         </div>
+        <ModalForms show={modalShow} onHide={() => setModalShow(false)}/>
       </main>
       <footer>
         <Footer />

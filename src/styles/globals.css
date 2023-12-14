@@ -55,7 +55,7 @@ body {
   color: #fff;
 }
 
-a {
+.button-ht6 {
   background-color: var(--primary);
   font-family: glot;
   font-size: 24px;
@@ -64,13 +64,15 @@ a {
   border-radius: 28px;
   padding: 0 48px 12px 48px;
   transition: 0.1s;
+  cursor: pointer;
+  width: 30%;
 }
 
-a:hover {
+.button-ht6:hover {
   background-color: #E18534;
 }
 
-a:active {
+.button-ht6:active {
   background-color: #E18534;
 }
 
@@ -144,6 +146,25 @@ h3 {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+.modal-body{
+  background-color: #161616;
+}
+
+.input{
+  background-color: #2C2C2C !important;
+  color:#fff !important;
+  height: 50px;
+  border: 0px !important;
+  font-size: 30px;
+}
+
+.input::placeholder{
+  color:#fff !important;
+}
+
+.btn-close{
+  background-color: #fcfcfc !important;
+}
 
 @media screen and (max-width: 1024px) {
   .title {
@@ -157,7 +178,7 @@ h3 {
     color: #fff;
   }
 
-  a {
+  .button-ht6 {
     background-color: var(--primary);
     font-family: glot;
     font-size: 20px;
@@ -167,6 +188,7 @@ h3 {
     padding: 12px 48px 12px 48px;
     transition: 0.1s;
     margin: 0px;
+    width: 100%;
   }
 
   .countdown {
