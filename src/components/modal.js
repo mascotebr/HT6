@@ -43,17 +43,16 @@ export function ModalForms(props) {
 
         >
             <Modal.Header closeButton style={{ backgroundColor: "#121212", border: 0 }}></Modal.Header>
-            <Modal.Body className="modal-ht6">
-                <h1 className="title text-center pt-0" style={{ fontSize: 36, lineHeight: 1 }}>
-                    Complete o Formulário para<br />
-                    comprar o treino <Image
+            <Modal.Body className={`modal-ht6 ${useResponsive() == 'desktop' ? 'px-5' : ''}`}>
+                <h1 className="title text-center pt-0" style={{ fontSize: useResponsive() == 'desktop' ? 36 : 24, lineHeight: 1 }}>
+                    Complete o formulário, está quase lá para garantir sua Vaga no <Image
                         width={useResponsive() == 'desktop' ? 110 : 61}
                         height={useResponsive() == 'desktop' ? 31 : 18}
                         src={"/logo_horizontal.png"}
                         alt="André Felipe"
                     />
                 </h1>
-                <form className="px-5" onSubmit={submit}>
+                <form onSubmit={submit}>
                     <Form.Group className="mb-2">
                         <Form.Label className="text-white"><b>Nome</b></Form.Label>
                         <Form.Control id="name"

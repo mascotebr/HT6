@@ -146,8 +146,13 @@ h3 {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+
 .modal-body{
   background-color: #161616;
+}
+
+.modal-ht6{
+  width: 100% !important;
 }
 
 .input{

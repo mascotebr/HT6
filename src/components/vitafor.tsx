@@ -12,7 +12,7 @@ export function Vitafor() {
       <div className="container">
 
         <p className="text-white text-center" >
-          Os 30 Primeiros compradores ganharão um KIT da{useResponsive() == 'desktop' ? <br /> : <></>}Patrocinadora Oficial do HT6: VITAFOR
+          Os 30 Primeiros compradores ganharão um KIT da{useResponsive() == 'desktop' ? <br /> : <></>} Patrocinadora Oficial do HT6: VITAFOR
         </p>
       </div>
       <div style={{ height: 32 }} />

@@ -40,7 +40,7 @@ export function Banner({ open }: any) {
             />
             <div style={{ marginLeft: 16, transform: useResponsive() == 'desktop' ? "TranslateY(30%)" : "TranslateY(15%)" }}>
               <p className="text-white" style={{ lineHeight: 0, fontSize: useResponsive() == 'desktop' ? 16 : 12 }}>
-                Personal Rrainer
+                Personal Trainer
               </p>
               <h2
                 className="title p-0"
