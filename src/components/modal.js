@@ -66,7 +66,7 @@ export function ModalForms(props) {
                     <Form.Group className="mb-5">
                         <Form.Label className="text-white"><b>Whatsapp + DDD</b></Form.Label>
                         <Form.Control id="whatsapp"
-                            name="whatsapp" type="text" placeholder="(15) 99999-9999" className="input" />
+                            name="whatsapp" type="text" placeholder="(15) 99999-9999" maxLength={15} className="input" />
                     </Form.Group>
                     <button className="button-ht6 w-100 text-center mb-3" type="submit" >
                         {isLoading ? (
