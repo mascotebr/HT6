@@ -68,9 +68,8 @@ export function Banner({ open }: any) {
               className="text-white"
               style={{ fontSize: 24, transform: "TranslateY(30%)" }}
             >
-              “O melhor <b>treino</b> pra você
-              <br />
-              iniciar seu ano com tudo!”
+              O treino pra você começar<br />
+              sua mudança definitiva
             </span>
           </div> : <></>}
 
